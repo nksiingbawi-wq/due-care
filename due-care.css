@@ -99,3 +99,19 @@ dialog{border-radius:2px}dialog::backdrop{background:#182b3cb3}
 @media(max-width:420px){.care-symbol{width:40px;height:40px}.brand{gap:9px}}
 
 nav a[aria-current="page"]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}.page-preview{display:block;text-decoration:none}.page-preview:hover h3{color:var(--gold)}main{min-height:55vh}
+
+/* Language selection remains visible independently of the mobile menu. */
+.header-inner{height:auto;min-height:96px;flex-wrap:wrap;gap:16px;padding-block:16px}
+.language-control{display:flex;gap:4px;align-items:center;flex-shrink:0}
+.language-control button{font-family:"Myanmar Text","Noto Sans Myanmar",sans-serif;font-size:12px;line-height:1.8;padding:5px 9px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;border-radius:3px}
+.language-control button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+html[lang="my"] body,html[lang="my"] button,html[lang="my"] input,html[lang="my"] textarea{font-family:"Myanmar Text","Noto Sans Myanmar",Pyidaungsu,sans-serif;line-height:1.95}
+html[lang="my"] h1,html[lang="my"] h2,html[lang="my"] h3,html[lang="my"] .eyebrow,html[lang="my"] .hero-meta{font-family:"Myanmar Text","Noto Sans Myanmar",Pyidaungsu,sans-serif;letter-spacing:normal;line-height:1.65;text-transform:none}
+html[lang="my"] .hero h1{font-size:clamp(32px,4vw,56px);letter-spacing:normal;line-height:1.65}
+html[lang="my"] h2{font-size:clamp(27px,3.5vw,40px)}
+html[lang="my"] nav{gap:12px;flex-wrap:wrap}
+html[lang="my"] .header-inner{justify-content:space-between}
+html[lang="my"] .wordmark{font-family:Georgia,serif;letter-spacing:-1px}
+html[lang="my"] .art-note{position:relative;left:0;bottom:auto;width:fit-content;margin-top:-20px}
+@media(min-width:651px){html[lang="my"] .header-inner nav{order:3;flex-basis:100%;justify-content:center}}
+@media(max-width:650px){.header-inner{position:relative;min-height:112px;padding-top:12px;padding-bottom:44px;gap:10px}.language-control{position:absolute;right:24px;bottom:7px}.language-control button{font-size:11px;padding:2px 9px}nav{top:100%}html[lang="my"] nav{flex-wrap:nowrap;gap:14px}html[lang="my"] .hero h1{font-size:34px}html[lang="my"] .hero-meta{gap:14px}}

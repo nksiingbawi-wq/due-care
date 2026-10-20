@@ -14,6 +14,8 @@ A personal website by Nang Kim Siing, covering humanitarian compliance, assuranc
 Open index.html in a modern browser. Keep the HTML, CSS and JavaScript files together.
 
 ## Editing
+- Use the English / မြန်မာ buttons in the header to change language. The choice is remembered in this browser.
+- due-care-i18n.js: Burmese translations for pages, articles, form messages and CSV templates. Keep translation keys in sync when editing English text. JavaScript is required for language switching; the default HTML is English.
 - index.html: homepage
 - due-care-about.html: biography and embedded photo
 - due-care-insights.html: articles
