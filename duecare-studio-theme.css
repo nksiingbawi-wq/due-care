@@ -1,6 +1,8 @@
 /* Adapted from duecarestudio_index.html; existing content and interactions retained. */
 :root{--paper:#f6f1e8;--ink:#f6f1e8;--muted:#bcb7ae;--line:#414139;--copper:#ffab70;--gold:var(--copper);--green:var(--copper);--light:#221c17;--white:#191a16;--canvas:#11120f;--surface:#080907;color-scheme:dark}
 body{background:var(--canvas);color:var(--paper);font-family:'DM Sans',Arial,sans-serif;font-size:17px;line-height:1.6}
+html{scroll-padding-top:160px}main section[id]{scroll-margin-top:20px}
+@media(max-width:650px){html{scroll-padding-top:125px}}
 .wrap{width:min(1240px,90%);max-width:1240px;padding-inline:0;margin-inline:auto}
 header{background:#080907f5;border-bottom:1px solid #292a23}
 .header-inner{min-height:98px;padding-block:21px;gap:20px}

@@ -18,7 +18,7 @@ const info={privacy:'<h2 id="reader-title">Privacy & preview information</h2><p>
 const closeMenu=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');};
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeMenu();menu.focus();}});
 document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!menu.contains(e.target))closeMenu();});
-if(false){
+if(document.querySelector('nav a[href="#home"]')){
  const sectionObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{if(entry.isIntersecting){
    nav.querySelectorAll('a').forEach(link=>{
