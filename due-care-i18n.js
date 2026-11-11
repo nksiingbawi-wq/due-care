@@ -45,6 +45,7 @@ pairs.push(
 pairs.push(['← Back to insights','← အတွေးအမြင်များသို့ ပြန်သွားရန်']);
 pairs.push(['Compliance Cornor','Compliance Cornor — စည်းမျဉ်းလိုက်နာမှုကဏ္ဍ'],['Risk Lab','Risk Lab — အန္တရာယ်လေ့လာရေးခန်း'],['Partnership Lounge','Partnership Lounge — မိတ်ဖက်ဆွေးနွေးဝိုင်း']);
 pairs.push(['Risk management.','အန္တရာယ်စီမံခန့်ခွဲမှု။']);
+pairs.push(['Thoughtful guidance and practical training for responsible humanitarian work.','တာဝန်ယူသော လူသားချင်းစာနာမှုလုပ်ငန်းအတွက် စဉ်းစားချင့်ချိန်ထားသော လမ်းညွှန်မှုနှင့် လက်တွေ့အသုံးချသင်တန်းများ။']);
 const dictionary = new Map(pairs);
 dictionary.set('Internal Controls in Practice','အတွင်းပိုင်းထိန်းချုပ်မှုများကို လက်တွေ့အသုံးချခြင်း');
 dictionary.set('Design and review controls within everyday workflows, including segregation of duties, delegated authority, approvals, reconciliations and record keeping. Test whether controls operate consistently, identify gaps and agree practical improvements.','နေ့စဉ်လုပ်ငန်းစဉ်များအတွင်း တာဝန်ခွဲခြားခြင်း၊ လွှဲအပ်လုပ်ပိုင်ခွင့်၊ ခွင့်ပြုချက်များ၊ စာရင်းတိုက်ဆိုင်စစ်ဆေးခြင်းနှင့် မှတ်တမ်းထိန်းသိမ်းခြင်းတို့အပါအဝင် ထိန်းချုပ်မှုများကို ရေးဆွဲသုံးသပ်ပါ။ ထိန်းချုပ်မှုများ တစ်သမတ်တည်း လုပ်ဆောင်နေခြင်းရှိမရှိ စစ်ဆေးပြီး ကွာဟချက်များကို ဖော်ထုတ်ကာ လက်တွေ့ကျသော တိုးတက်မှုများကို သဘောတူသတ်မှတ်ပါ။');
