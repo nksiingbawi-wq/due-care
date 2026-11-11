@@ -46,6 +46,12 @@ pairs.push(['← Back to insights','← အတွေးအမြင်မျာ�
 pairs.push(['Compliance Cornor','Compliance Cornor — စည်းမျဉ်းလိုက်နာမှုကဏ္ဍ'],['Risk Lab','Risk Lab — အန္တရာယ်လေ့လာရေးခန်း'],['Partnership Lounge','Partnership Lounge — မိတ်ဖက်ဆွေးနွေးဝိုင်း']);
 pairs.push(['Risk management.','အန္တရာယ်စီမံခန့်ခွဲမှု။']);
 const dictionary = new Map(pairs);
+dictionary.set('Partner Compliance & Due Diligence','မိတ်ဖက်အဖွဲ့၏ စည်းမျဉ်းလိုက်နာမှုနှင့် ကြိုတင်စိစစ်ခြင်း');
+dictionary.set('Strengthen accountability during an active partnership through clear roles, financial and programme reporting, ongoing monitoring and evidence-based corrective-action follow-up.','မိတ်ဖက်ပူးပေါင်းဆောင်ရွက်နေစဉ် ရှင်းလင်းသောတာဝန်များ၊ ဘဏ္ဍာရေးနှင့် အစီအစဉ်အစီရင်ခံမှု၊ စဉ်ဆက်မပြတ်စောင့်ကြည့်မှုနှင့် အထောက်အထားအခြေပြု ပြုပြင်ဆောင်ရွက်ချက် နောက်ဆက်တွဲစောင့်ကြည့်မှုတို့ဖြင့် တာဝန်ခံမှုကို အားကောင်းစေပါ။');
+dictionary.set('Assess prospective partners before selection and funding: review registration, governance, financial capacity and applicable donor requirements; document risks and agree safeguards or conditions before disbursement.','မိတ်ဖက်ရွေးချယ်ခြင်းနှင့် ရန်ပုံငွေမပေးမီ အလားအလာရှိသောမိတ်ဖက်များကို အကဲဖြတ်ပါ။ မှတ်ပုံတင်မှု၊ အုပ်ချုပ်မှု၊ ဘဏ္ဍာရေးစွမ်းရည်နှင့် သက်ဆိုင်ရာအလှူရှင်သတ်မှတ်ချက်များကို သုံးသပ်ပါ။ အန္တရာယ်များကို မှတ်တမ်းတင်ပြီး ရန်ပုံငွေမထုတ်မီ ကာကွယ်မှုများ သို့မဟုတ် စည်းကမ်းချက်များကို သဘောတူသတ်မှတ်ပါ။');
+dictionary.set('Showing all 4 training topics.','သင်တန်းခေါင်းစဉ် ၄ ခုလုံးကို ပြသထားသည်။');
+dictionary.set('Showing 4 training topics.','သင်တန်းခေါင်းစဉ် ၄ ခုကို ပြသထားသည်။');
+dictionary.set('Showing 2 training topics.','သင်တန်းခေါင်းစဉ် ၂ ခုကို ပြသထားသည်။');
 dictionary.set('All training','သင်တန်းအားလုံး');
 dictionary.set('Filter training','သင်တန်းအမျိုးအစား ရွေးချယ်ရန်');
 dictionary.set('Showing all 3 training topics.','သင်တန်းခေါင်းစဉ် ၃ ခုလုံးကို ပြသထားသည်။');
