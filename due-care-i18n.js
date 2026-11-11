@@ -43,6 +43,7 @@ pairs.push(
 ['Your browser remembers your language choice using local storage. Please do not submit confidential documents or sensitive case details. You can contact nksiingbawi@gmail.com about your message or personal information.','သင့်ဘရောက်ဇာသည် ဘာသာစကားရွေးချယ်မှုကို စက်အတွင်း သိမ်းဆည်းမှတ်သားထားသည်။ လျှို့ဝှက်စာရွက်စာတမ်းများ သို့မဟုတ် ထိလွယ်ရှလွယ်သော အမှုအသေးစိတ်များ မပို့ပါနှင့်။ သင့်စာ သို့မဟုတ် ကိုယ်ရေးအချက်အလက်အတွက် nksiingbawi@gmail.com ထံ ဆက်သွယ်နိုင်ပါသည်။']
 );
 pairs.push(['← Back to insights','← အတွေးအမြင်များသို့ ပြန်သွားရန်']);
+pairs.push(['Compliance Cornor','Compliance Cornor — စည်းမျဉ်းလိုက်နာမှုကဏ္ဍ'],['Risk Lab','Risk Lab — အန္တရာယ်လေ့လာရေးခန်း'],['Partnership Lounge','Partnership Lounge — မိတ်ဖက်ဆွေးနွေးဝိုင်း']);
 const dictionary = new Map(pairs);
 const originals = new WeakMap();
 const attributes = new WeakMap();
