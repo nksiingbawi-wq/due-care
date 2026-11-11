@@ -45,6 +45,11 @@ pairs.push(
 pairs.push(['← Back to insights','← အတွေးအမြင်များသို့ ပြန်သွားရန်']);
 pairs.push(['Compliance Cornor','Compliance Cornor — စည်းမျဉ်းလိုက်နာမှုကဏ္ဍ'],['Risk Lab','Risk Lab — အန္တရာယ်လေ့လာရေးခန်း'],['Partnership Lounge','Partnership Lounge — မိတ်ဖက်ဆွေးနွေးဝိုင်း']);
 const dictionary = new Map(pairs);
+dictionary.set('All training','သင်တန်းအားလုံး');
+dictionary.set('Filter training','သင်တန်းအမျိုးအစား ရွေးချယ်ရန်');
+dictionary.set('Showing all 3 training topics.','သင်တန်းခေါင်းစဉ် ၃ ခုလုံးကို ပြသထားသည်။');
+dictionary.set('Showing 1 training topic.','သင်တန်းခေါင်းစဉ် ၁ ခုကို ပြသထားသည်။');
+dictionary.set('Showing 3 training topics.','သင်တန်းခေါင်းစဉ် ၃ ခုကို ပြသထားသည်။');
 const originals = new WeakMap();
 const attributes = new WeakMap();
 let language = 'en';

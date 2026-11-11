@@ -1,5 +1,11 @@
 
 const reader=document.getElementById('reader');let lastTrigger;
+document.querySelectorAll('[data-training-filter]').forEach(button=>button.addEventListener('click',()=>{
+ document.querySelectorAll('[data-training-filter]').forEach(item=>{item.classList.toggle('active',item===button);item.setAttribute('aria-pressed',String(item===button));});
+ let count=0;
+ document.querySelectorAll('[data-training-category]').forEach(topic=>{topic.hidden=button.dataset.trainingFilter!=='all'&&topic.dataset.trainingCategory!==button.dataset.trainingFilter;if(!topic.hidden)count++;});
+ document.getElementById('training-filter-status').textContent='Showing '+count+' training topic'+(count===1?'':'s')+'.';
+}));
 function openReader(html,trigger){lastTrigger=trigger;document.getElementById('reader-content').innerHTML=html;reader.showModal();reader.scrollTop=0;}
 reader.querySelector('.close').addEventListener('click',()=>reader.close());reader.addEventListener('close',()=>lastTrigger?.focus());reader.addEventListener('click',e=>{if(e.target===reader){const r=reader.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)reader.close();}});
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
