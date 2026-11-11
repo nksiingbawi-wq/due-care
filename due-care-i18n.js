@@ -44,6 +44,7 @@ pairs.push(
 );
 pairs.push(['← Back to insights','← အတွေးအမြင်များသို့ ပြန်သွားရန်']);
 pairs.push(['Compliance Cornor','Compliance Cornor — စည်းမျဉ်းလိုက်နာမှုကဏ္ဍ'],['Risk Lab','Risk Lab — အန္တရာယ်လေ့လာရေးခန်း'],['Partnership Lounge','Partnership Lounge — မိတ်ဖက်ဆွေးနွေးဝိုင်း']);
+pairs.push(['Risk management.','အန္တရာယ်စီမံခန့်ခွဲမှု။']);
 const dictionary = new Map(pairs);
 dictionary.set('All training','သင်တန်းအားလုံး');
 dictionary.set('Filter training','သင်တန်းအမျိုးအစား ရွေးချယ်ရန်');
