@@ -1,6 +1,7 @@
 /* Adapted from duecarestudio_index.html; existing content and interactions retained. */
 :root{--paper:#f6f1e8;--ink:#f6f1e8;--muted:#bcb7ae;--line:#414139;--copper:#ffab70;--gold:var(--copper);--green:var(--copper);--light:#221c17;--white:#191a16;--canvas:#11120f;--surface:#080907;color-scheme:dark}
 body{background:var(--canvas);color:var(--paper);font-family:'DM Sans',Arial,sans-serif;font-size:17px;line-height:1.6}
+.article-page{max-width:780px}.article-back{display:inline-block;margin-bottom:38px}.article-page h1{font-size:clamp(36px,5vw,62px);line-height:1.15;margin:22px 0 35px}.article-page h3{color:var(--copper);margin:32px 0 14px}.article-page article p{line-height:1.85;color:var(--muted);margin-bottom:22px}.article-page strong{color:var(--paper)}.article-end{border-top:1px solid var(--line);margin-top:45px;padding-top:25px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}html[lang="my"] .article-page h1{font-size:clamp(28px,4vw,44px);line-height:1.7}
 html{scroll-padding-top:160px}main section[id]{scroll-margin-top:20px}
 @media(max-width:650px){html{scroll-padding-top:125px}}
 .wrap{width:min(1240px,90%);max-width:1240px;padding-inline:0;margin-inline:auto}

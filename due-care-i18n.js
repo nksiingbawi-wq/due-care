@@ -42,6 +42,7 @@ pairs.push(
 ['This site is hosted on GitHub Pages. When you submit the contact form, your name, email address and message are processed by FormSubmit and emailed to nksiingbawi@gmail.com. FormSubmit retains submissions for 30 days.','ဤဝက်ဘ်ဆိုက်ကို GitHub Pages တွင် လွှင့်တင်ထားသည်။ ဆက်သွယ်ရေးဖောင် ပေးပို့သည့်အခါ သင့်အမည်၊ အီးမေးလ်လိပ်စာနှင့် စာကို FormSubmit က စီမံဆောင်ရွက်ပြီး nksiingbawi@gmail.com ထံ အီးမေးလ်ပို့ပါသည်။ FormSubmit သည် ပေးပို့ချက်များကို ရက် ၃၀ ထိန်းသိမ်းထားသည်။'],
 ['Your browser remembers your language choice using local storage. Please do not submit confidential documents or sensitive case details. You can contact nksiingbawi@gmail.com about your message or personal information.','သင့်ဘရောက်ဇာသည် ဘာသာစကားရွေးချယ်မှုကို စက်အတွင်း သိမ်းဆည်းမှတ်သားထားသည်။ လျှို့ဝှက်စာရွက်စာတမ်းများ သို့မဟုတ် ထိလွယ်ရှလွယ်သော အမှုအသေးစိတ်များ မပို့ပါနှင့်။ သင့်စာ သို့မဟုတ် ကိုယ်ရေးအချက်အလက်အတွက် nksiingbawi@gmail.com ထံ ဆက်သွယ်နိုင်ပါသည်။']
 );
+pairs.push(['← Back to insights','← အတွေးအမြင်များသို့ ပြန်သွားရန်']);
 const dictionary = new Map(pairs);
 const originals = new WeakMap();
 const attributes = new WeakMap();
@@ -59,7 +60,7 @@ function render(root) {
   originals.set(node, source);
   let value = source.trim();
   if (language === 'my') {
-   const title = value.match(/^(Home|About|Insights|Resources|Projects|Training|Contact) \| (.+)$/);
+   const title = value.match(/^(.+) \| (.+)$/);
    value = title ? translate(title[1]) + ' | ' + title[2] : translate(value);
    const count = source.trim().match(/^Showing (\d+) articles?\.$/);
    if (count) value = 'ဆောင်းပါး ' + count[1] + ' ပုဒ်ကို ပြသထားသည်။';
