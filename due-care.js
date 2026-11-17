@@ -101,7 +101,7 @@ window.siteSearchIndex = [{"title":"Care in thought. Clarity in action.","url":"
   panel.id = 'site-search';
   panel.className = 'site-search-dialog';
   panel.setAttribute('aria-labelledby', 'site-search-title');
-  panel.innerHTML = '<div class="site-search-heading"><h2 id="site-search-title">Search this website</h2><button type="button" class="site-search-close" aria-label="Close search">Close ×</button></div><label for="site-search-input">Search pages, articles and resources</label><input class="site-search-input" id="site-search-input" type="search" placeholder="Try risk, compliance or training" autocomplete="off"><p class="site-search-status" role="status" aria-live="polite"></p><ul class="site-search-results"></ul>';
+  panel.innerHTML = '<div class="site-search-heading"><h2 id="site-search-title">Search in DueCare Studio</h2><button type="button" class="site-search-close" aria-label="Close search">Close ×</button></div><label for="site-search-input">Search pages, articles and resources</label><input class="site-search-input" id="site-search-input" type="search" placeholder="Try risk, compliance or training" autocomplete="off"><p class="site-search-status" role="status" aria-live="polite"></p><ul class="site-search-results"></ul>';
   document.body.append(panel);
   const input = panel.querySelector('input');
   const status = panel.querySelector('[role="status"]');
