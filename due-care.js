@@ -40,6 +40,10 @@ window.siteSearchIndex = [{"title":"Care in thought. Clarity in action.","url":"
   if (!header || !window.siteSearchIndex) return;
   const style = document.createElement('style');
   style.textContent = `
+    .header-tools{display:flex;align-items:center;gap:10px;margin-left:auto;flex-shrink:0}
+    .header-tools .language-control{position:static!important;margin:0}
+    @media(max-width:650px){.header-tools{position:absolute;right:0;bottom:8px;gap:8px}.header-tools .site-search-toggle{width:40px;height:40px}}
+
     .site-search-toggle{flex-shrink:0;display:grid;place-items:center;width:44px;height:44px;padding:10px;border:1px solid var(--line,#cbd2c3);border-radius:50%;background:transparent;color:var(--ink,#203d33);cursor:pointer}
     .site-search-toggle:hover{background:var(--light,#e7ebdf)}
     .site-search-dialog{box-sizing:border-box;width:calc(100% - 32px);max-width:700px;max-height:85vh;overflow:auto;padding:28px;background:var(--paper,#f7f5ed);color:var(--ink,#203d33);border:1px solid var(--line,#cbd2c3);border-radius:8px}
@@ -65,7 +69,23 @@ window.siteSearchIndex = [{"title":"Care in thought. Clarity in action.","url":"
   trigger.setAttribute('aria-haspopup', 'dialog');
   trigger.setAttribute('aria-controls', 'site-search');
   trigger.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5" stroke-linecap="round"/></svg>';
-  header.insertBefore(trigger, header.querySelector('.menu-toggle'));
+  
+  function placeSearchBesideLanguage() {
+    const language = header.querySelector('.language-control');
+    if (!language) { header.append(trigger); return; }
+    let tools = header.querySelector('.header-tools');
+    if (!tools) {
+      tools = document.createElement('div');
+      tools.className = 'header-tools';
+      header.insertBefore(tools, language);
+    }
+    tools.append(language, trigger);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', placeSearchBesideLanguage, { once: true });
+  } else {
+    placeSearchBesideLanguage();
+  }
   const panel = document.createElement('dialog');
   panel.id = 'site-search';
   panel.className = 'site-search-dialog';
