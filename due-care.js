@@ -40,7 +40,7 @@ window.siteSearchIndex = [{"title":"Care in thought. Clarity in action.","url":"
   if (!header || !window.siteSearchIndex) return;
   const style = document.createElement('style');
   style.textContent = `
-    .header-tools{display:flex;align-items:center;gap:10px;margin-left:auto;flex-shrink:0}
+    .header-tools{display:flex;align-items:center;gap:10px;margin-left:auto;flex-shrink:0;transform:translateX(var(--search-edge-offset,0px))}
     .header-tools .language-control{position:static!important;margin:0}
     @media(max-width:650px){.header-tools{position:absolute;right:0;bottom:8px;gap:8px}.header-tools .site-search-toggle{width:40px;height:40px}}
 
@@ -80,6 +80,12 @@ window.siteSearchIndex = [{"title":"Care in thought. Clarity in action.","url":"
       header.insertBefore(tools, language);
     }
     tools.append(language, trigger);
+    const alignToPageEdge = () => {
+      const gap = Math.max(0, document.documentElement.clientWidth - header.getBoundingClientRect().right - 16);
+      tools.style.setProperty('--search-edge-offset', gap + 'px');
+    };
+    alignToPageEdge();
+    window.addEventListener('resize', alignToPageEdge);
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', placeSearchBesideLanguage, { once: true });
