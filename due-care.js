@@ -50,7 +50,7 @@ window.siteSearchIndex = [{"title":"Care in thought. Clarity in action.","url":"
 
     .site-search-toggle{flex-shrink:0;display:grid;place-items:center;width:44px;height:44px;padding:10px;border:1px solid var(--line,#cbd2c3);border-radius:50%;background:transparent;color:var(--ink,#203d33);cursor:pointer}
     .site-search-toggle:hover{background:var(--light,#e7ebdf)}
-    .site-search-dialog{box-sizing:border-box;width:calc(100% - 32px);max-width:700px;max-height:85vh;overflow:auto;padding:28px;background:var(--paper,#f7f5ed);color:var(--ink,#203d33);border:1px solid var(--line,#cbd2c3);border-radius:8px}
+    .site-search-dialog{box-sizing:border-box;width:calc(100% - 32px);max-width:700px;max-height:85vh;overflow:auto;padding:28px;background:var(--surface,var(--paper,#f7f5ed));color:var(--ink,#203d33);border:1px solid var(--line,#cbd2c3);border-radius:8px}
     .site-search-dialog::backdrop{background:#142c25a8}
     .site-search-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}
     .site-search-heading h2{font-size:30px;margin:0}
