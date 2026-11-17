@@ -40,9 +40,13 @@ window.siteSearchIndex = [{"title":"Care in thought. Clarity in action.","url":"
   if (!header || !window.siteSearchIndex) return;
   const style = document.createElement('style');
   style.textContent = `
-    .header-tools{display:flex;align-items:center;gap:10px;margin-left:auto;flex-shrink:0;transform:translateX(var(--search-edge-offset,0px))}
+
+    header > .site-search-toggle{position:absolute;right:0;top:50%;transform:translateY(-50%);margin:0;border-radius:4px 0 0 4px}
+    @media(max-width:650px){header > .site-search-toggle{top:auto;bottom:8px;transform:none}}
+
+    .header-tools{display:flex;align-items:center;gap:10px;margin-left:auto;flex-shrink:0}
     .header-tools .language-control{position:static!important;margin:0}
-    @media(max-width:650px){.header-tools{position:absolute;right:0;bottom:8px;gap:8px}.header-tools .site-search-toggle{width:40px;height:40px}}
+    @media(max-width:650px){.header-tools{position:absolute;right:56px;bottom:8px;gap:8px}.header-tools .site-search-toggle{width:40px;height:40px}}
 
     .site-search-toggle{flex-shrink:0;display:grid;place-items:center;width:44px;height:44px;padding:10px;border:1px solid var(--line,#cbd2c3);border-radius:50%;background:transparent;color:var(--ink,#203d33);cursor:pointer}
     .site-search-toggle:hover{background:var(--light,#e7ebdf)}
@@ -79,7 +83,8 @@ window.siteSearchIndex = [{"title":"Care in thought. Clarity in action.","url":"
       tools.className = 'header-tools';
       header.insertBefore(tools, language);
     }
-    tools.append(language, trigger);
+    tools.append(language);
+    header.closest('header').append(trigger);
     const alignToPageEdge = () => {
       const gap = Math.max(0, document.documentElement.clientWidth - header.getBoundingClientRect().right - 16);
       tools.style.setProperty('--search-edge-offset', gap + 'px');
